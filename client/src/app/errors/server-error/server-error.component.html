@@ -1,0 +1,10 @@
+<h4>Internal server error - refreshing the page will make the error dissapear</h4>
+
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error {{error.message}}</h5>
+    <p>Note: If you are seeing this the problem might be on BE</p>
+    <div style="background-color: gainsboro;">
+        <code >{{error.details}}</code>
+    </div>
+    
+</ng-container>
